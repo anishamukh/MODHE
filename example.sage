@@ -1,9 +1,9 @@
-#load("constants.sage")
-#load("auxiliary_functions.sage")
-#load("KeyGen.sage")
-#load("Encrypt-Decrypt.sage")
-#load("HMult.sage")
-#load("Relin.sage")
+load("constants.sage")
+load("auxiliary_functions.sage")
+load("KeyGen.sage")
+load("Encrypt-Decrypt.sage")
+load("HMult.sage")
+load("Relin.sage")
 
 
 key = public_private_keygen()
