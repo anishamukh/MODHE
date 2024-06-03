@@ -2,7 +2,7 @@
 A module-LWE based homomorphic encryption scheme variant of RNS-CKKS/HEAAN.
 
 ## Proof-of-concept implementation
-We give a proof-of-concept Sage implementation of the important ModCKKS algorithms for a module of rank two.
+We give a proof-of-concept Sage implementation of the important ModHE algorithms for a module of rank two.
 
 ## Description
 We built the ModCKKS algorithms based on the ring CKKS variant. For two elements **x** = (x_0, ..., x_(m-1))  and **y**= (y_0, ..., y_(m-1))  in a module R_q^m, operations between them boil down to lower-level operations between their respective components (x_i) and (y_i) in the underlying ring. 
