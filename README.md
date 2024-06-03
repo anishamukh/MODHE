@@ -1,4 +1,4 @@
-# ModCKKS
+# ModHE
 A module-LWE based homomorphic encryption scheme variant of RNS-CKKS/HEAAN.
 
 ## Proof-of-concept implementation
