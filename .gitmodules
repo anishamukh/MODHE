@@ -1,0 +1,12 @@
+[submodule "openfhe-development/third-party/google-test"]
+	path = openfhe-development/third-party/google-test
+	url = https://github.com/google/googletest.git
+[submodule "openfhe-development/third-party/gperftools"]
+	path = openfhe-development/third-party/gperftools
+	url = https://github.com/gperftools/gperftools.git
+[submodule "openfhe-development/third-party/cereal"]
+	path = openfhe-development/third-party/cereal
+	url = https://github.com/openfheorg/cereal.git
+[submodule "openfhe-development/third-party/google-benchmark"]
+	path = openfhe-development/third-party/google-benchmark
+	url = https://github.com/google/benchmark.git
