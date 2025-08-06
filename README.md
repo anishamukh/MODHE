@@ -4,6 +4,9 @@ A module-LWE based homomorphic encryption scheme variant of RNS-CKKS/HEAAN.
 ## Proof-of-concept implementation
 We give a proof-of-concept Sage implementation of the important ModHE algorithms for a module of rank two.
 
+## Implementation using OpenFHE
+We have also integrated ModHE sub-routines in OpenFHE. 
+
 ## Description
 We built the ModCKKS algorithms based on the ring CKKS variant. For two elements **x** = (x_0, ..., x_(m-1))  and **y**= (y_0, ..., y_(m-1))  in a module R_q^m, operations between them boil down to lower-level operations between their respective components (x_i) and (y_i) in the underlying ring. 
 
@@ -15,4 +18,5 @@ This unoptimized POC version takes about an hour and a half for a ring of dimens
 **Note:** An online SageMath compiler, such as, https://sagecell.sagemath.org/, would tolerate parameter sizes upto N = 2^8 (change it in the parameter *POLDEG* in *constants.sage*) but might not run for higher parameters.
 
 ## OpenFHE
+
 The README for the OpenFHE implementation can be found [here](openfhe-development/README.md).
