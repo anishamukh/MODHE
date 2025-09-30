@@ -3,8 +3,37 @@ ModHE implementation for OpenFHE
 Based on version 1.2.2 (commit 7b8346f4eac27121543e36c17237b919e03ec058)
 
 ## How to build/run
-Follow the original OpenFHE installation instructions [here](https://openfhe-development.readthedocs.io/en/latest/sphinx_rsts/intro/installation/installation.html).
+We use CMake to build OpenFHE. OpenFHE supports any GNU C++ compiler version 9 or above and clang C++ compiler version 10 or above.
 To clone the necessary submodules use the command `git submodule update --init`
+
+1. Install system prerequisites (if not already installed), including a C++ compiler with OMP support, cmake, make.
+2. Clone the OpenFHE repo to your local machine.
+3. Create a directory where the binaries will be built. The typical choice is a subfolder "build". In this case, the commands are:
+```
+mkdir build
+cd build
+cmake ..
+```
+4. If you want to use any external libraries, such as NTL/GMP or tcmalloc, install these libraries.
+5. Build OpenFHE by running the following command (this will take few minutes; using the `-j` make command-line flag is suggested to speed up the build) `make`
+6. Install OpenFHE to a system directory (if desired or for production purposes)
+```
+make install
+```
+
+Run unit tests to make sure all capabilities operate as expected:
+```
+make testall
+```
+
+
+Run sample code to test, e.g:
+```
+bin/examples/pke/simple-integers
+```
+
+
+For further information please refer to the [original OpenFHE installation instructions](https://openfhe-development.readthedocs.io/en/latest/sphinx_rsts/intro/installation/installation.html).
 
 ## Supported Features and Operations
  * **PKE**
