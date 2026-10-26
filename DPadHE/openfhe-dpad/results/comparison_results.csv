@@ -1,0 +1,32 @@
+Table,r_or_set,quantity,measured,paper,verdict
+4,2,ModHE_s,0.063,0.049,OFF (1.29x)
+4,2,DPad_s,0.0564,0.039,OFF (1.45x)
+4,2,Speedup,1.118,1.26,ok (0.89x)
+4,3,ModHE_s,0.31589999999999996,0.242,OFF (1.31x)
+4,3,DPad_s,0.18619999999999998,0.124,OFF (1.50x)
+4,3,Speedup,1.697,1.95,ok (0.87x)
+4,4,ModHE_s,1.1092,0.772,OFF (1.44x)
+4,4,DPad_s,0.5008,0.325,OFF (1.54x)
+4,4,Speedup,2.215,2.37,ok (0.93x)
+4,5,ModHE_s,3.1825,2.049,OFF (1.55x)
+4,5,DPad_s,1.0819,0.737,OFF (1.47x)
+4,5,Speedup,2.942,2.78,ok (1.06x)
+4,6,ModHE_s,6.5886000000000005,5.676,ok (1.16x)
+4,6,DPad_s,2.0301,1.328,OFF (1.53x)
+4,6,Speedup,3.245,4.27,OFF (0.76x)
+4,7,ModHE_s,,8.173,denied
+4,7,DPad_s,3.2918000000000003,2.066,OFF (1.59x)
+4,7,Speedup,,3.95,denied
+4,8,ModHE_s,,19.06,denied
+4,8,DPad_s,5.6775,3.337,OFF (1.70x)
+4,8,Speedup,,5.71,denied
+6,II,DPad_s,0.3885,0.317,OFF (1.23x)
+7,II,DPad_MB,223.6,166.9,OFF (1.34x)
+6,III,DPad_s,0.4954,0.325,OFF (1.52x)
+7,III,DPad_MB,405.0,343.8,ok (1.18x)
+6,V,DPad_s,2.2389,1.99,ok (1.13x)
+7,V,DPad_MB,1440.9,1214.3,ok (1.19x)
+6,VI,DPad_s,2.8873,2.03,OFF (1.42x)
+7,VI,DPad_MB,2333.3,2010.9,ok (1.16x)
+Sec.5,$N = 2^{15}$,min Precision,34.89,33.9,ok
+Sec.5,$N = 2^{16}$,min Precision,34.39,33.4,ok

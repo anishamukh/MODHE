@@ -1,0 +1,17 @@
+prototype,L,MLWE,POLDEG,operation,seconds,run
+modhe_baseline,7,2,16384,keygen,39.95,2026-10-18 15:40
+modhe_baseline,7,2,16384,relin_keygen,1106.64,2026-10-18 15:40
+modhe_baseline,7,2,16384,encrypt_1,71.97,2026-10-18 15:40
+modhe_baseline,7,2,16384,encrypt_2,71.52,2026-10-18 15:40
+modhe_baseline,7,2,16384,decrypt_1,0.09,2026-10-18 15:40
+modhe_baseline,7,2,16384,decrypt_2,0.08,2026-10-18 15:40
+modhe_baseline,7,2,16384,hmult,40.20,2026-10-18 15:40
+modhe_baseline,7,2,16384,relin,5077.89,2026-10-18 15:40
+modhe_baseline,7,2,16384,decrypt_after_rescale,4036.61,2026-10-18 15:40
+dpad_prototype,7,2,3,7,7,16384,keygen,36.11,2026-10-18 17:18
+dpad_prototype,7,2,3,7,7,16384,dpad_keygen,752.77,2026-10-18 17:18
+dpad_prototype,7,2,3,7,7,16384,encrypt_1,56.42,2026-10-18 17:18
+dpad_prototype,7,2,3,7,7,16384,encrypt_2,56.59,2026-10-18 17:18
+dpad_prototype,7,2,3,7,7,16384,hmult,39.68,2026-10-18 17:18
+dpad_prototype,7,2,3,7,7,16384,dpad_relin,977.99,2026-10-18 17:18
+dpad_prototype,7,2,3,7,7,16384,decrypt_after_rescale,3846.50,2026-10-18 17:18

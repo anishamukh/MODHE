@@ -1,0 +1,6 @@
+# Python dependencies for the plot scripts.
+# Install into a virtual environment:
+#   uv venv .venv && . .venv/bin/activate && uv pip install -r requirements.txt
+numpy>=1.24
+matplotlib>=3.7
+pandas>=2.0

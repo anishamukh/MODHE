@@ -1,0 +1,41 @@
+FINDINGS
+The points the paper leaves open, demonstrated in code.
+available RAM: 24.6 GB
+
+F1  modulus chain
+    fresh ciphertext, N = 8192
+    L = 8                 : 10 towers of 20..60 bit   (paper: L + 1 = 9 towers, log2 q = 60 + 40 x L = 380)
+    L = 13                : 15 towers of 20..60 bit   (paper: L + 1 = 14 towers, log2 q = 60 + 40 x L = 580)
+    L = 19                : 21 towers of 20..60 bit   (paper: L + 1 = 20 towers, log2 q = 60 + 40 x L = 820)
+
+F2  special modulus
+    RLWE eval-mult key, L = 19, N = 8192, paper log2 P_hat = 280
+    mu = 1                : P 14 towers of 60..60 bit, log2 P_hat = 840   (paper 280), key A-vector 1.81 MB
+    mu = 2                : P 8 towers of 60..60 bit, log2 P_hat = 480   (paper 280), key A-vector 1.44 MB
+    mu = 3                : P 6 towers of 60..60 bit, log2 P_hat = 360   (paper 280), key A-vector 1.31 MB
+    mu = 4                : P 5 towers of 60..60 bit, log2 P_hat = 300   (paper 280), key A-vector 1.25 MB
+    mu = 5                : P 4 towers of 60..60 bit, log2 P_hat = 240   (paper 280), key A-vector 1.19 MB
+    mu = 6                : P 4 towers of 60..60 bit, log2 P_hat = 240   (paper 280), key A-vector 1.19 MB
+
+F3/F4/F6  precision chain
+    HMult + Relinearize + Rescale, L = 19, N = 32768
+    F6  fresh             : level 0, log2 sf 59.58, deg 2, 21 towers of 20..60 bit
+    F6  after EvalMult    : level 1, log2 sf 80.00, deg 2, 20 towers of 40..60 bit
+    F6  after Relin       : level 1, log2 sf 80.00, deg 2, 20 towers of 40..60 bit
+    F6  after Rescale     : level 1, log2 sf 80.00, deg 2, 20 towers of 40..60 bit
+    F3  decoded l2        : 19.90 bits over 16384 slots
+    F3  decode reports    : 27.00 bits for the same ciphertext
+    F4  decoded l2, 8 slots: 24.63 bits
+    F3/F4  estimate, 16384 slots: estimate 34.92 bits (log2 error 5.08)
+    F3/F4  estimate, 8 slots: estimate 41.06 bits (log2 error -1.06)
+    paper                 : ~33.9 bits at N = 2^15, the RQ2 condition of Sec. 5
+
+F5  baseline dimension
+    one context per line, L = 19, N = 8192, r = 4
+    RNS-CKKS, N = 8192    : 2 components x 1 ring element of 8192 = 8192 coefficients per component
+    RNS-CKKS, N = 32768   : 2 components x 1 ring element of 32768 = 32768 coefficients per component
+    ModHE ciphertext      : 1 x 1 module of degree 8192
+    ModHE key, rank 4     : 4 x 4 module entries, 4 ring elements of 8192 = 32768 coefficients per row
+    matching baseline     : N_RLWE = N x r = 32768
+
+done.
